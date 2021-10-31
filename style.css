@@ -1,0 +1,110 @@
+body{
+  background-image: url('display.jpg');
+  background-size: 2000px 1000px;
+  background-position: center;
+}
+
+span{
+  animation-name: exampleB;
+  animation-duration: 1s;
+  font-family: 'Henny Penny', cursive;
+  margin-left: 10%;
+  font-size: 80px;
+  color: white;
+  position: relative;
+}
+
+.astronaut{
+  animation-name: example;
+  animation-duration: 300s;
+  margin-left: 15%;
+
+}
+
+.SpaceShuttle{
+  margin-left: 3500px;
+  opacity: 0;
+  transition: 2s;
+}
+
+.SpaceShuttle:hover{
+  opacity:10;
+}
+
+.earth{
+  margin-left: 1500px;
+  animation-name: exampleA;
+  animation-duration: 600s;
+  opacity: 0.9;
+  background-image: url('satellite.png');
+  background-repeat: no-repeat;
+}
+
+.jupiter{
+  animation-name: example;
+  animation-duration: 500s;
+  opacity: 0.9;
+}
+
+
+.mars{
+  margin-top: 50%;
+  animation-name: exampleA;
+  animation-duration: 500s;
+  opacity: 0.8;
+  background-image: url('satellite.png');
+  background-repeat: no-repeat;
+}
+
+.ufo{
+  animation-name: exampleD;
+  opacity: 0.9;
+  animation-duration: 190s;
+  position: relative;
+}
+
+.theSun{
+  float: right;
+  animation-name: exampleA;
+  animation-duration: 500s;
+  opacity: 0.8;
+  margin-left: -50%;
+}
+
+.fly{
+  float: left;
+  animation-name: exampleC;
+  animation-duration: 80s;
+  position: relative;
+  cursor: pointer;
+}
+
+@keyframes example {
+  from {transform: rotateZ(0deg);}
+  to {transform: rotateZ(9860deg);}
+}
+
+@keyframes exampleA {
+  from {transform: rotateZ(0deg);}
+  to {transform: rotateZ(-9860deg);}
+}
+
+@keyframes exampleB {
+  from {right: 1000px;}
+  to {right: 0;}
+}
+
+@keyframes exampleC {
+  from {right: 340px;}
+  to {right: -2000px;}
+}
+
+@keyframes exampleC {
+  from {right: 340px;}
+  to {right: -2000px;}
+}
+
+@keyframes exampleD {
+  from {left: 5000px;}
+  to {left: -940px;}
+}
