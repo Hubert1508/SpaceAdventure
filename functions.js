@@ -1,10 +1,10 @@
 function hi(){
 
   setTimeout(function(){
-    $('#text').html('Potrzebuję Twojej pomocy!');}, 4000);
+    $('#text').html('Potrzebuję Twojej pomocy!');}, 2000);
 
   setTimeout(function(){
-    $('#text').html('!!!Znajdź mój prom kosmiczny!!!'); }, 7000);
+    $('#text').html('Znajdź mój prom kosmiczny!!!'); }, 4000);
 
 }
 
@@ -19,7 +19,9 @@ function ship(){
   $('#textFlay').css('opacity','0');
   $('#textFlay1').css('opacity','10');
   $('#textFlay1').html('URATOWAŁEŚ NAS! :)');
-  $("#flyShip").animate({left: '1650px'});
+  setTimeout(function(){
+    $("#flyShip").animate({left: '1650px'});}, 2000);
+
 }
 
 function crash(){
